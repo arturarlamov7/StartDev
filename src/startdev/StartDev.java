@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package основы.програмирования;
+package startdev;
 
 /**
  *
  * @author user
  */
-public class ОсновыПрограмирования {
+public class StartDev {
 
     /**
      * @param args the command line arguments
