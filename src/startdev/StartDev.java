@@ -15,14 +15,12 @@ public class StartDev {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Task1 task1 = new task1();
+        Task1 task1 = new Task1();
         task1.run();
+        Task2 task2 = new Task2();
+        task2.run();
     }
 
-    private static class task1 extends Task1 {
-
-        public task1() {
-        }
-    }
+   
     
 }

@@ -13,6 +13,7 @@ import java.util.Scanner;
  */
 public class Task1 {
     public void run() {
+        System.out.println("----- Задача 2 -----");
         int a;
         int d = 32;
         double c;
