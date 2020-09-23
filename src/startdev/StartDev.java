@@ -25,8 +25,8 @@ public class StartDev {
         task4.run();
         Task5 task5 = new Task5();
         task5.run();
+        Task6 task6 = new Task6();
+        task6.run();
     }
 
-   
-    
 }
