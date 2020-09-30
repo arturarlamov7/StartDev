@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Task1 {
     public void run() {
-        System.out.println("----- Задача 2 -----");
+        System.out.println("----- Задача 1 -----");
         int a;
         int d = 32;
         double c;
@@ -22,5 +22,6 @@ public class Task1 {
         a = new Scanner(System.in).nextInt();
         c = a * b + d;
         System.out.println("По фаренгейту это будет: " + c);
+        System.out.println("----- конец задачи 1 ------");
     }  
 }

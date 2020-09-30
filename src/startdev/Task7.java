@@ -7,20 +7,23 @@ public class Task7 {
     public void run(){
         System.out.println("----- Задача 7 ------");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите строку:");
+        System.out.print("Введите строку:");
         String s = scanner.nextLine();        
-        System.out.println("Введите букву: ");
+        System.out.print("Введите букву: ");
         String letter = scanner.nextLine();
         int n = 0;
         
-        
-        for (int i = 0; n < letter.length(); ++n) {
-            System.out.println("Буква \""+letter+"\" встречается в тексте "+ n + " раз");
-
+        if(letter.length() != 0) {
+            n++;
+            for (int i = 0; i < s.length(); i++) {
+                if(s.charAt(i) == 'n' ) {
+                    n++;
+                }              
+            }
         }
                 
-            
+        System.out.println("Буква \""+letter+"\" встречается в тексте "+ n + " раз");  
         System.out.println("");
-        System.out.println("----- конец задачи 6 ------");  
+        System.out.println("----- конец задачи 7 ------");  
     }
 }

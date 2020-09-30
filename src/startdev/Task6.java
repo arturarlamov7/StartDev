@@ -15,23 +15,20 @@ public class Task6 {
     public void run() {
         System.out.println("----- Задача 6 ------");
         System.out.println("Создаем ДВУХМЕРНЫЙ ЗУБЧАТЫЙ массив  из 10х(5,6,7,8,9) ячеек типа int, \nзаполняем его случайными числами и выводим \nего значения в цикле");
-        int[][] Array = new int[10][];
-        int inc = 0;
-        Array[0] = new int[5];
-        Array[1] = new int[6];
-        Array[2] = new int[7];
-        Array[3] = new int[8];
-        Array[4] = new int[9];
-        Random random = new Random();
+        int Arr[][] = new int[10][];
+        Random rand = new Random();
+      
+        for (int x = 0; x < Arr.length; x++) {
+            Arr[x] = new int[(rand.nextInt(9-5+1) + 5)];
+        }
         
-        for(int i = 0; i<Array.length; i++) {
-            for(int j = 0; j<Array[i].length; j++) {
-	    System.out.print(Array[i][j] + " ");
-	}
-	System.out.println();
-}        
-
+        for(int i = 0; i < Arr.length; i++) {
+            for(int j = 0; j < Arr[i].length; j++){
+                Arr[i][j] = rand.nextInt(20-0+1)-0;
+                System.out.print(Arr[i][j] + "\t");
+            }
+            System.out.println("");
+        }
         System.out.println("----- конец задачи 6 ------");          
-    }
-    
+    }   
 }
