@@ -19,7 +19,7 @@ public class Task3 {
         int myArray[] = new int[10];
         int sum = 0;
         int max = 0;
-        int min = 0;
+        int min = 10;
         for (int i = 0; i < myArray.length; i++) {
             myArray[i] = (int) Math.round((Math.random() * 10) + 9);
             System.out.println(myArray[i]);

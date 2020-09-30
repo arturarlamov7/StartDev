@@ -5,6 +5,7 @@
  */
 package startdev;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -13,32 +14,23 @@ import java.util.Scanner;
  */
 class Task2 {
     public void run() { 
-        int UnknownNumber, UserNumber, TrysCount = 0;
-        Scanner input = new Scanner(System.in);
-
-        System.out.println("Загадано число от 1 до 5");
-
-        UnknownNumber = (int)Math.floor(Math.random() * 5);
-
-        do {
-		TrysCount++;
-
-		System.out.print("Введите ваше число: ");
-
-		UserNumber = input.nextInt();
-				
-		if (UserNumber > UnknownNumber)
-		System.out.println("Ты проиграл!");
-            
-		else if (UserNumber < UnknownNumber)            	
-		System.out.println("Ты проиграл!");	 		 		
-
-		else 
-		System.out.println("Ты выйграл!");
-
-        } while (UserNumber != UnknownNumber);
-
-        System.out.println("Количество попыток: " + TrysCount);
+        System.out.println("----- Задача 2 ------");
+        System.out.println("Загадано число от 5 до 10: ");
+        int min = 5;
+        int max = 10;
+        Random random = new Random ();
+        int myNumber = random.nextInt(max-min+1)+min;
+        Scanner  scanner = new Scanner (System.in);
+        System.out.println("Отгадай: ");
+        int attempt = 1;
+        int gamerNumber = scanner.nextInt();
+        scanner.nextLine();
+        if(myNumber == gamerNumber)  
+        System.out.println("Ты выиграл");
+        if(myNumber > gamerNumber){
+            System.out.println("Ты  проиграл");
+        }        
+        System.out.println("----- конец задачи 2 ------");
 
     }
 }
